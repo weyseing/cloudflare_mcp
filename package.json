@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare_mcp",
+  "version": "1.0.0",
+  "description": "- https://www.youtube.com/watch?v=3Jsh4brTjE0 - https://github.com/cloudflare/workers-mcp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weyseing/cloudflare_mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weyseing/cloudflare_mcp/issues"
+  },
+  "homepage": "https://github.com/weyseing/cloudflare_mcp#readme"
+}
