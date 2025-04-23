@@ -1,9 +1,12 @@
 FROM node:22-alpine
 
+# install packages
+RUN apk add bash  
+
 # working dir
 WORKDIR /usr/src/app
 
-# install packages
+# install node packages
 COPY package*.json ./
 RUN npm install
 
