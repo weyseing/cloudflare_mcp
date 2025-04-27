@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/weyseing/cloudflare_mcp#readme",
   "dependencies": {
-    "create-cloudflare": "^2.45.1"
+    "create-cloudflare": "^2.45.1",
+    "workers-mcp": "^0.0.13"
   }
 }
