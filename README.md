@@ -29,8 +29,14 @@
 
 ### Setup CF Worker: -
 - Set CF account ID to **wrangler.jsonc**
-    - `"account_id": "95437c835139b228336df1913750ad6e"`
+    > `"account_id": "95437c835139b228336df1913750ad6e"`
 - Set CF API key in env
-    - `CLOUDFLARE_API_TOKEN=<API-KEY-HERE>`
+    > `CLOUDFLARE_API_TOKEN=<API-KEY-HERE>`
 - Setup
-    - > `npx workers-mcp setup`
+    > `npx workers-mcp setup`
+- MCP Config
+    > ```
+    > npx workers-mcp run worker-mcp https://worker-mcp.jeremy-heng.workers.dev /usr/src/app/worker-mcp
+    > 
+    > "C:\Users\jeremy.heng\AppData\Roaming\npm\workers-mcp.cmd" run worker-mcp https://worker-mcp.jeremy-heng.workers.dev C:\Users\jeremy.heng\Desktop\Temp\cloudflare_mcp\worker-mcp-windows
+    > ```
