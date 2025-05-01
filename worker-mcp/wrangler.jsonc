@@ -7,7 +7,7 @@
 	"name": "worker-mcp",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-23",
-	"account_id": "95437c835139b228336df1913750ad6e",
+	"account_id": "6297c4874e84952aea069e7f61199b18",
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
