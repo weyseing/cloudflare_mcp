@@ -36,7 +36,18 @@
     > `npx workers-mcp setup`
 - MCP Config
     > ```
-    > npx workers-mcp run worker-mcp https://worker-mcp.jeremy-heng.workers.dev /usr/src/app/worker-mcp
-    > 
-    > "C:\Users\jeremy.heng\AppData\Roaming\npm\workers-mcp.cmd" run worker-mcp https://worker-mcp.jeremy-heng.workers.dev C:\Users\jeremy.heng\Desktop\Temp\cloudflare_mcp\worker-mcp-windows
+    > {
+    >     "mcpServers": {
+    >         "worker-mcp-window": {
+    >         "command": "workers-mcp",
+    >         "args": [
+    >             "run",
+    >             "worker-mcp",
+    >             "https://worker-mcp.jeremy-heng.workers.dev",
+    >             "C:\\Users\\jeremy.heng\\Desktop\\Temp\\cloudflare_mcp\\worker-mcp"
+    >         ],
+    >         "env": {}
+    >         }
+    >     }
+    > }
     > ```

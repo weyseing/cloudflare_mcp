@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/weyseing/cloudflare_mcp#readme",
   "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.11.0",
+    "abort-controller": "^3.0.0",
     "create-cloudflare": "^2.45.1",
+    "mcp-remote": "^0.1.0",
     "workers-mcp": "^0.0.13"
   }
 }
