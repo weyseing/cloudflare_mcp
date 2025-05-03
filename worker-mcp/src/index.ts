@@ -13,6 +13,18 @@ export default class MyWorker extends WorkerEntrypoint<Env> {
   }
 
   /**
+   * Perform a DuckDuckGo search and return the Instant Answer API response.
+   * @param query {string} The search term to look up
+   * @return {object} The parsed response from DuckDuckGo Instant Answer API
+   */
+  async duckDuckGoSearch(query: string): Promise<any> {
+    const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_html=1`;
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`DDG API error ${resp.status}`);
+    return resp.json();
+  }
+
+  /**
    * @ignore
    **/
   async fetch(request: Request): Promise<Response> {

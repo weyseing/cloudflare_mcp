@@ -32,10 +32,11 @@
     > `"account_id": "95437c835139b228336df1913750ad6e"`
 - Set CF API key in env
     > `CLOUDFLARE_API_TOKEN=<API-KEY-HERE>`
-- Setup
-    > `npx workers-mcp setup`
+- Deploy worker to CF
+    - **First deploy:** `npx workers-mcp setup`
+    - **Re-deploy:** `npm run deploy`
 - MCP Config
-    > ```
+    > ```json
     > {
     >     "mcpServers": {
     >         "worker-mcp-window": {
@@ -43,8 +44,8 @@
     >         "args": [
     >             "run",
     >             "worker-mcp",
-    >             "https://worker-mcp.jeremy-heng.workers.dev",
-    >             "C:\\Users\\jeremy.heng\\Desktop\\Temp\\cloudflare_mcp\\worker-mcp"
+    >             "https://worker-mcp.sysadm.workers.dev/",
+    >             "\\\\wsl.localhost\\Ubuntu-20.04\\home\\jeremy\\test\\cloudflare_mcp\\worker-mcp
     >         ],
     >         "env": {}
     >         }
