@@ -11,7 +11,8 @@
 
 ## CloudFlare Worker: -
 ### Create CF worker project: -
-- > `npx create-cloudflare@latest worker-mcp`
+- Create via CF template
+    > `npx create-cloudflare@latest worker-mcp`
 - Project selection:
     > ```
     > ├ In which directory do you want to create your application?
@@ -31,11 +32,12 @@
 - Set CF account ID to **wrangler.jsonc**
     > `"account_id": "95437c835139b228336df1913750ad6e"`
 - Set CF API key in env
-    > `CLOUDFLARE_API_TOKEN=<API-KEY-HERE>`
+    - API's permission template: `Edit Cloudflare Workers`
+    - ENV: `CLOUDFLARE_API_TOKEN=<API-KEY-HERE>`
 - Deploy worker to CF
     - **First deploy:** `npx workers-mcp setup`
     - **Re-deploy:** `npm run deploy`
-- MCP Config
+- MCP server config
     > ```json
     > {
     >     "mcpServers": {
